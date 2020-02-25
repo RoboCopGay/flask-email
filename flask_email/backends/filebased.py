@@ -30,7 +30,7 @@ class Mail(ConsoleMail):
         elif not os.path.exists(self.file_path):
             try:
                 os.makedirs(self.file_path)
-            except OSError, err:
+            except OSError as err:
                 raise Exception('Could not create directory for saving email messages: %s (%s)' % (self.file_path, err))
         # Make sure that self.file_path is writable.
         if not os.access(self.file_path, os.W_OK):

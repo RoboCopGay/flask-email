@@ -1,8 +1,8 @@
 """
 REST email backend class via requests.
 """
-from flask.ext.email.backends.base import BaseMail
-from flask.ext.email.message import sanitize_address
+from flask_email.backends.base import BaseMail
+from flask_email.message import sanitize_address
 
 import threading
 import requests

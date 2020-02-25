@@ -16,7 +16,10 @@ from .encoding import smart_str, force_unicode
 try:
     from cStringIO import StringIO
 except ImportError:
-    from StringIO import StringIO
+    try:
+        from StringIO import StringIO
+    except ImportError:
+        from io import StringIO
 
 from flask import current_app as app
 
