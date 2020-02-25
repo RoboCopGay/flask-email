@@ -33,6 +33,8 @@ setup(
     install_requires=[
         'Flask',
         'blinker',
+        'requests',
+        'smtplib'
     ],
     classifiers=[
         'Environment :: Web Environment',
